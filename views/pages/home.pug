@@ -1,7 +1,12 @@
-extends ../layouts/main/pug
+extends ../layouts/main.pug
+
+block globals
+  title The Adventure of a Lifetime
 
 block content
-    h1#my-unique-id Best Site EVER!!!
 
-    p.intro-text(data-attr="my value") It was a rainy day in pizzaville
-            
+  header.home-cta
+    h1
+      = title
+      br
+      small It was a rainy day in Pizzaville...
