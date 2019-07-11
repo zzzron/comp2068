@@ -7,10 +7,11 @@ html(lang="en")
 
         link(href="/css/styles.css", rel="stylesheet")   
 
-        title = (title ? title : "I do not have a title yet!") 
+        title= (title ? title : "I do not have a title yet!")
 
     body 
         include ../partials/main-nav.pug
+        include ../partials/flash.pug
 
         block content
 
